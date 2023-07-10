@@ -29,15 +29,16 @@ li:hover a{
 
 div.loginbox{
 	text-align: center;
-	border:2px solid gray;
+	border:0px solid gray;
 	width:50%;
 	margin:5% 25% 10% 25%;
 	box-shadow: 2px 5px gray;
 	padding:5px;
 	background-image: linear-gradient(to bottom right, rgba(245, 172, 210, 0.7),rgba(81, 223, 215, 0.8));
 }
-input{
+input,select,legend{
 	padding:5px;
-	margin:5px;
+	margin:7.5px;
 }
+
 
