@@ -6,10 +6,18 @@ header{
 	text-align: center;
 	padding:10px;
 	background-image:linear-gradient(to right, rgba(223, 138, 81, 0.8),rgba(174, 167, 234, 0.8));
+	position:fixed;
+	top:0;
+	width:100%;
+	overflow: hidden;
 }
 nav{
 	background-color: gray;
+	position:sticky;
+	top:57px;
 }
+
+
 li{
 	list-style-type: none;
 	display: inline-block;
@@ -26,6 +34,10 @@ a{
 li:hover a{
 	color:white;
 }
+img{
+	float:left;
+	clear:both;
+}
 
 div.loginbox{
 	text-align: center;
@@ -40,5 +52,19 @@ input,select,legend{
 	padding:5px;
 	margin:7.5px;
 }
+p{
+	font-family: 'Nunito', sans-serif;
+}
 
+footer{
+	
+	position:fixed;
+	bottom:0;
+	width: 100% ;
+	color:black;
+	
+	text-align:center;
+	background-color: whitesmoke;
+	z-index: 1;
+}
 
