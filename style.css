@@ -5,25 +5,26 @@
 header{
 	text-align: center;
 	padding:10px;
-	background-image:linear-gradient(to right, rgba(223, 138, 81, 0.8),rgba(174, 167, 234, 0.8));
+	background-image:linear-gradient(to right, rgba(223, 138, 81, 1),rgba(174, 167, 234, 1));
 	position:fixed;
 	top:0;
 	width:100%;
 	overflow: hidden;
 }
-nav{
+
+.flex-nav{
+	display: flex;
 	background-color: gray;
+	align-content: ;
 	position:sticky;
 	top:57px;
+	justify-content: flex-start;
 }
-
-
-li{
-	list-style-type: none;
-	display: inline-block;
-	padding: 5px 20px;
+.flex-nav > div{
+	padding: 5px 30px;
+	text-align: center;
 }
-li:hover{
+.flex-nav div:hover, .flex-nav div:hover a{
 	background-color: black;
 	color:white;
 }
@@ -31,12 +32,16 @@ a{
 	text-decoration: none;
 	color:black;
 }
-li:hover a{
-	color:white;
+
+
+body{
+	margin-top:58px;
 }
+
+
 img{
 	float:left;
-	clear:both;
+	
 }
 
 div.loginbox{
@@ -68,3 +73,6 @@ footer{
 	z-index: 1;
 }
 
+.btn{
+	border-radius:10px;
+}
