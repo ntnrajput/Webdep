@@ -1,0 +1,14 @@
+nav.navbar{
+	background-color: red;
+	position:sticky;
+	top:0;
+
+}
+
+div.loginbox{
+	width:70%;
+	margin: 10% 15%;
+	padding:20px;
+	background-color: cyan;
+	border-radius: 20px;
+} 	

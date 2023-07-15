@@ -2,29 +2,54 @@
 	margin: 0;
 	padding:0;
 }
+
 header{
-	text-align: center;
+
 	display:flex;
-	justify-content: center;
 	padding:11px;
 	background-image:linear-gradient(to right, rgba(223, 138, 81, 1),rgba(174, 167, 234, 1));
 	position:fixed; top:0;
 	width:100%;	
 	}
 
+.flex-head > div.name{
+	text-align: center;
+
+}
+
+.flex-head > div.icons{
+	align-content: right;
+}
+
+.sm_icons{
+	width:25px;
+	height:25px;
+	transition: all 0.4s;
+	margin:0px 5px;
+	&:hover{
+		transform: scale(1.2);
+		}
+
+	}
+	
+
 .flex-nav{
 	display: flex;
 	background-color: gray;
 	position:sticky;
 	top:50px;
-	
 }
-.flex-nav > div{
+
+.nav-option{
 	padding: 10px 30px;
-	text-align: center;
 	transition: all 0.4s;
-	
 }
+
+.login-nav{
+	position:absolute;
+	right:0;
+}
+
 .flex-nav div:hover, .flex-nav div:hover a{
 	background-color: black;
 	color:white;
@@ -56,7 +81,7 @@ a{
 
 .gallery_pic:hover{
 	transform: scale(1.05);
-	transform:rotate(1080deg);
+	
 }
 body{
 	margin-top:58px;
@@ -71,8 +96,8 @@ img{
 div.loginbox{
 	text-align: center;
 	border:0px solid gray;
-	width:50%;
-	margin:5% 25% 10% 25%;
+	min-width:70%;
+	margin:5% 10% 10% 10%;
 	box-shadow: 2px 5px gray;
 	padding:5px;
 	background-image: linear-gradient(to bottom right, rgba(245, 172, 210, 0.7),rgba(81, 223, 215, 0.8));
