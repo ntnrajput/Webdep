@@ -4,36 +4,60 @@
 }
 header{
 	text-align: center;
-	padding:10px;
+	display:flex;
+	justify-content: center;
+	padding:11px;
 	background-image:linear-gradient(to right, rgba(223, 138, 81, 1),rgba(174, 167, 234, 1));
-	position:fixed;
-	top:0;
-	width:100%;
-	overflow: hidden;
-}
+	position:fixed; top:0;
+	width:100%;	
+	}
 
 .flex-nav{
 	display: flex;
 	background-color: gray;
-	align-content: ;
 	position:sticky;
-	top:57px;
-	justify-content: flex-start;
+	top:50px;
+	
 }
 .flex-nav > div{
-	padding: 5px 30px;
+	padding: 10px 30px;
 	text-align: center;
+	transition: all 0.4s;
+	
 }
 .flex-nav div:hover, .flex-nav div:hover a{
 	background-color: black;
 	color:white;
+	transform:scale(1.05);
 }
 a{
 	text-decoration: none;
 	color:black;
+	transition:all 0.4s;
 }
 
+.gallery{
+	display:flex;
+	flex-wrap: wrap;
+	background-color: gray;
+	align-content: center;
 
+
+}
+
+.gallery_pic{
+	width:200px;
+	height:200px;
+	padding:5px;
+	border-radius: 10px 50px;
+	transition:all 0.3s;
+
+}
+
+.gallery_pic:hover{
+	transform: scale(1.05);
+	transform:rotate(1080deg);
+}
 body{
 	margin-top:58px;
 }
