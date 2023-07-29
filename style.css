@@ -111,7 +111,7 @@ a{
   counter-set: num var(--num);
   font: 800 40px system-ui;
 }
-.numbercount::after {
+.numbercount::before {
   content: counter(num);
 }
 .numbercount:hover {
