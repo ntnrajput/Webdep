@@ -121,18 +121,17 @@ a{
 
 .element4{
 	height:200px;
-	width:400px;
 	background-color: #A1D3C8;
 	border-radius:20px 90px 2px 20px;
 }
 
 .element5{
 	height:200px;
-	width:200px;
+	
 }
 
 .element6{
-	border-radius: 20px 2px 50px 20px;
+	border-radius: 20px 2px 90px 20px;
 	background-color:#77B4A6 ;
 }
 
