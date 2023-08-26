@@ -35,13 +35,13 @@ nav.navbar{
 }
 
 .fa {
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 2px 5px;
-  border-radius: 30%;
-  transition:all 1s;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 2px 5px;
+	border-radius: 30%;
+	transition:all 1s;
 }
 
 .nav-item:hover{
@@ -50,9 +50,9 @@ nav.navbar{
 
 
 .fa:hover {
-    opacity: 0.7;
-    background-color: #77B4A6;
-    transform:Scale(1.2);
+	opacity: 0.7;
+	background-color: #77B4A6;
+	transform:Scale(1.2);
 }
 
 .btn{
@@ -105,21 +105,21 @@ a{
 
 
 @property --num {
-  syntax: "<integer>";
-  initial-value: 0;
-  inherits: false;
+	syntax: "<integer>";
+	initial-value: 0;
+	inherits: false;
 }
 
 .numbercount {
-  transition: --num 5s;
-  counter-set: num var(--num);
-  font: 800 40px system-ui;
+	transition: --num 5s;
+	counter-set: num var(--num);
+	font: 800 40px system-ui;
 }
 .numbercount::before {
-  content: counter(num);
+	content: counter(num);
 }
 .numbercount:hover {
-  --num: 100;
+	--num: 100;
 }
 
 
@@ -142,62 +142,62 @@ a{
 
 .box_under_icon{
 	position: relative;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 15px;
-  padding: 10px 40px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 15px;
+	padding: 10px 40px;
 
 }
 
 .icon_on_box_right {
-  position: absolute;
-  top: 50%;
-  right: 30px; /* Adjust this value to position the icon */
-  transform: translateY(-200%);
-  width: 20px;
-  height: 20px;
+	position: absolute;
+	top: 50%;
+	right: 30px; /* Adjust this value to position the icon */
+	transform: translateY(-200%);
+	width: 20px;
+	height: 20px;
 
 }
 
 .icon_on_box_left {
-  position: absolute;
-  top: 50%;
-  left: -50px; /* Adjust this value to position the icon */
-  transform: translateY(-200%);
-  width: 20px;
-  height: 20px;
+	position: absolute;
+	top: 50%;
+	left: -50px; /* Adjust this value to position the icon */
+	transform: translateY(-200%);
+	width: 20px;
+	height: 20px;
 }
 
 
 
 .cards-wrapper {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 .card img {
-  max-width: 100%;
-  max-height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 .card {
-  margin: 0 0.5em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  border: none;
-  border-radius: 0;
+	margin: 0 0.5em;
+	box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+	border: none;
+	border-radius: 0;
 }
 .carousel-inner {
-  padding: 1em;
+	padding: 1em;
 }
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: #e1e1e1;
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
+	background-color: #e1e1e1;
+	width: 5vh;
+	height: 5vh;
+	border-radius: 50%;
+	top: 50%;
+	transform: translateY(-50%);
 }
 @media (min-width: 768px) {
-  .card img {
-    height: 11em;
-  }
+	.card img {
+		height: 11em;
+	}
 }
 
 .card:hover{
@@ -205,15 +205,162 @@ a{
 	transition: all 0.5s;
 }
 
-$spacers: (
-  0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
-  3: $spacer,
-  4: ($spacer * 1.5),
-  5: ($spacer * 3),
-  6: ($spacer * 5)
-)
+
+/*css for testimonials*/
+
+.aoe-title{
+  text-transform: uppercase;
+      text-align: center;
+    font-weight: 600;
+    color: #19b5fe;
+}
+
+.line{
+    width: 75px;
+    height: 5px;
+    background-color: #f62459;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+/*=================================================== TESTIMONIALS SECTION ==========================================================*/
+
+.testimonials-section{
+  padding: 50px 0px 50px 0px;
+}
+
+
+/*-------------------------------------------------------- Carousel ----------------------------------------------------------*/
+.col-center {
+  margin: 0 auto;
+  float: none !important;
+}
+.carousel {
+  margin: 50px auto;
+  padding: 0 170px;
+}
+.carousel .item {
+  color: #999;
+  font-size: 14px;
+    text-align: center;
+  overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+.carousel .img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+.carousel .testimonial {
+  padding: 30px 0 10px;
+  color: #555;
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+.carousel-title{
+  margin: 25px;
+  color: #333;
+}
+
+.carousel-line{
+  height: 1px;
+  width: 600px;
+  background-color: #cecece;
+  margin: auto;
+}
+
+.carousel .overview { 
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.carousel .overview b {
+  color: #7AA641;
+}
+
+.company-name{
+    color: #555;
+}
+
+.carousel .carousel-control {
+  width: 0px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+  background: none;
+}
+.carousel-control i {
+    font-size: 25px;
+    line-height: 42px;
+    position: absolute;
+    display: inline-block;
+    color: #000;
+}
+.carousel .carousel-indicators {
+  bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  margin: 1px 3px;
+  border-radius: 50%;
+}
+.carousel-indicators li { 
+  background: #999;
+  border-color: transparent;
+  box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {  
+  background: #555;   
+  box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+.testimonial span{
+    font-size: 62px;
+    position: absolute;
+    top: 57%;
+    left: 0;
+    font-family: 'Emblema One', cursive;
+    color: #333;
+}
+
+.carousel-control-prev span{
+    position: absolute;
+    font-size: 14px;
+    top: 29%;
+    left: 20px;
+    color: #89c4f4;
+    text-shadow: none;
+    font-weight: bolder;
+}
+
+.carousel-control-next span{
+    position: absolute;
+    font-size: 14px;
+    top: 29%;
+    right: 20px;
+    color: #89c4f4;
+    text-shadow: none;
+    font-weight: bolder;
+}
+
+/*-------------------------------------------------------- Carousel ----------------------------------------------------------*/
+
+/*=================================================== END TESTIMONIALS SECTION ==========================================================*/
+
 
 
 

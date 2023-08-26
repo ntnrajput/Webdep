@@ -20,3 +20,5 @@ function updated() {
         clearInterval(counts);
     }
 }
+
+
