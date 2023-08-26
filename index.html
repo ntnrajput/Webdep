@@ -7,6 +7,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="myscript.js"></script>
+
 </head>
 <body>
 	<!-- navbar -->
@@ -15,7 +17,7 @@
 			<div class="container-fluid" >
 				<a class="navbar-brand" href="index.html">
 					<img src="Images/logorp.png" style="width: 50px; height: 50px; padding:1px; margin:0 " > 
-					<strong> Reboot Physio</strong>
+					<strong> REBOOT PHYSIOTHERAPY </strong>
 				</a>
 				<button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -90,7 +92,9 @@
 					
 					<hr>
 					<div class="mt-md-1 text-left">
-						<button type="button" class=" btn btn-success btn-lg">Book Online Consultation</button>
+						<button type="button" class=" me-2 me-md-4 btn btn-success ">Book Consultation</button>
+					
+						<button type="button" class=" btn btn-success ">Consult Online</button>
 					</div>
 				</div>
 
@@ -101,13 +105,20 @@
 				</div>
 
 				<div class="d-flex flex-column flex-md-row flex-lg-column me-5 mb-1 justify-content-center ">
-					<div class="p-2 ms-5 ms-md-3 mt-2 element2 numbercount "  >
-						<h5>Satisfied patients</h5>
+					<div class="pt-4 ms-5 ms-md-3 mt-2 element2 "  >	
+						<h6>More Than</h6>					
+						<h3 id="counter">
+							<!-- counts -->
+						</h3>
+						<h6>Satisfied patients</h6>
 					</div>
 					<div class="p-2 ms-5 ms-md-3 mt-2 element2 element3"  >
-
+						<h6>More than</h6>					
+						<h3 id="counter1">
+							<!-- counts1 -->
+						</h3>
+						<h6>Techniques</h6>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -368,134 +379,145 @@
 		</div>		
 	</div>
 
-	<div class="container" style="height: 150px;">
+	
 		
 
-		<div class="footer">
-			<!-- Footer -->
-			<footer class="text-center text-lg-start bg-light text-muted">
-				<!-- Section: Social media -->
-				<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-					<!-- Left -->
-					<div class="me-5 d-none d-lg-block">
-						<span>Get connected with us on social networks:</span>
-					</div>
-					<!-- Left -->
-
-					<!-- Right -->
-					<div>
-						<a href="" class="me-4 text-reset">
-							<i class="fa fa-facebook-f"></i>
-						</a>
-						<a href="" class="me-4 text-reset">
-							<i class="fa fa-twitter"></i>
-						</a>
-						<a href="" class="me-4 text-reset">
-							<i class="fa fa-google"></i>
-						</a>
-						<a href="" class="me-4 text-reset">
-							<i class="fa fa-instagram"></i>
-						</a>
-						<a href="" class="me-4 text-reset">
-							<i class="fa fa-linkedin"></i>
-						</a>
-						<a href="" class="me-4 text-reset">
-							<i class="fa fa-github"></i>
-						</a>
-					</div>
-					<!-- Right -->
-				</section>
-				<!-- Section: Social media -->
-
-				<!-- Section: Links  -->
-				<section class="">
-					<div class="container text-center text-md-start mt-5">
-						<!-- Grid row -->
-						<div class="row mt-3">
-							<!-- Grid column -->
-							<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-								<!-- Content -->
-								<h6 class="text-uppercase fw-bold mb-4">
-									<i class="fas fa-gem me-3"></i>Company name
-								</h6>
-								<p>
-									Here you can use rows and columns to organize your footer content. Lorem ipsum
-									dolor sit amet, consectetur adipisicing elit.
-								</p>
-							</div>
-							<!-- Grid column -->
-
-							<!-- Grid column -->
-							<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-								<!-- Links -->
-								<h6 class="text-uppercase fw-bold mb-4">
-									Products
-								</h6>
-								<p>
-									<a href="#!" class="text-reset">Angular</a>
-								</p>
-								<p>
-									<a href="#!" class="text-reset">React</a>
-								</p>
-								<p>
-									<a href="#!" class="text-reset">Vue</a>
-								</p>
-								<p>
-									<a href="#!" class="text-reset">Laravel</a>
-								</p>
-							</div>
-							<!-- Grid column -->
-
-							<!-- Grid column -->
-							<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-								<!-- Links -->
-								<h6 class="text-uppercase fw-bold mb-4">
-									Useful links
-								</h6>
-								<p>
-									<a href="#!" class="text-reset">Pricing</a>
-								</p>
-								<p>
-									<a href="#!" class="text-reset">Settings</a>
-								</p>
-								<p>
-									<a href="#!" class="text-reset">Orders</a>
-								</p>
-								<p>
-									<a href="#!" class="text-reset">Help</a>
-								</p>
-							</div>
-							<!-- Grid column -->
-
-							<!-- Grid column -->
-							<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-								<!-- Links -->
-								<h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-								<p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-								<p>
-									<i class="fas fa-envelope me-3"></i>
-									info@example.com
-								</p>
-								<p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-								<p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-							</div>
-							<!-- Grid column -->
-						</div>
-						<!-- Grid row -->
-					</div>
-				</section>
-				<!-- Section: Links  -->
-
-				<!-- Copyright -->
-				<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-					© 2021 Copyright:
-					<a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+	<div class="footer">
+		<!-- Footer -->
+		<footer class="text-center text-lg-start bg-light text-muted">
+			<!-- Section: Social media -->
+			<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+				<!-- Left -->
+				<div class="me-5 d-none d-lg-block">
+					<span>Get connected with us on social networks:</span>
 				</div>
-				<!-- Copyright -->
-			</footer>
-			<!-- Footer -->
+				<!-- Left -->
 
-		</div>
+				<!-- Right -->
+				<div>
+					<a href="" class="me-4 text-reset">
+						<i class="fa fa-facebook-f"></i>
+					</a>
+					<a href="" class="me-4 text-reset">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a href="" class="me-4 text-reset">
+						<i class="fa fa-google"></i>
+					</a>
+					<a href="" class="me-4 text-reset">
+						<i class="fa fa-instagram"></i>
+					</a>
+					<a href="" class="me-4 text-reset">
+						<i class="fa fa-linkedin"></i>
+					</a>
+					<a href="" class="me-4 text-reset">
+						<i class="fa fa-github"></i>
+					</a>
+				</div>
+				<!-- Right -->
+			</section>
+			<!-- Section: Social media -->
+
+			<!-- Section: Links  -->
+			<section class="">
+				<div class="container text-center text-md-start mt-5">
+					<!-- Grid row -->
+					<div class="row mt-3">
+						<!-- Grid column -->
+						<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+							<!-- Content -->
+							<h6 class="text-uppercase fw-bold mb-4">
+								<i class="fas fa-gem me-3"></i>Reboot Physiotherapy clinic
+							</h6>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+						<!-- Grid column -->
+
+						<!-- Grid column -->
+						<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+							<!-- Links -->
+							<h6 class="text-uppercase fw-bold mb-4">
+								Services
+							</h6>
+							<p>
+								<a href="#!" class="text-reset">Advance Therapy</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Prenatal & Postnatal Phyiotherapy</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Rehabilitation</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Posture and Ergonomic Education</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Pain Management</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Gait and Movement Training</a>
+							</p>
+
+						</div>
+						<!-- Grid column -->
+
+						<!-- Grid column -->
+						<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+							<!-- Links -->
+							<h6 class="text-uppercase fw-bold mb-4">
+								Useful links
+							</h6>
+							<p>
+								<a href="#!" class="text-reset">Book Consultation</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Youtube Videos</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">View all Services</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Consult Online</a>
+							</p>
+						</div>
+						<!-- Grid column -->
+
+						<!-- Grid column -->
+						<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+							<!-- Links -->
+							<h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+							<p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+							<p>
+								<i class="fas fa-envelope me-3"></i>
+								info@example.com
+							</p>
+							<p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+							<p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+						</div>
+						<!-- Grid column -->
+					</div>
+					<!-- Grid row -->
+				</div>
+			</section>
+			<!-- Section: Links  -->
+
+			<!-- Copyright -->
+			<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+				© 2021 Copyright:
+				<a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+			</div>
+			<!-- Copyright -->
+		</footer>
+		<!-- Footer -->
+
+		
 
 
 
@@ -510,6 +532,8 @@
 
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
 	</body>
 
 	</html>
